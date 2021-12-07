@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700,900&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700,700italic&display=swap&subset=cyrillic-ext");
+
+.cart__text {
+    background-color: #00a4b3;
+    box-shadow: none;
+}
+
+body {
+    height: 850px;
+}
+
+.coll__menu {
+    font-style: normal;
+    font-family: "Roboto";
+}
+
+.coll__title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.under {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.coll__net {
+    margin: 0 250px;
+    grid-column: 2 span;
+    display: grid;
+    grid-gap: 25px;
+    margin-top: 50px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.coll-net__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coll-net__card {
+    height: 180px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    background-color: #00a4b3;
+    border-radius: 10px;
+    padding: 30px;
+    padding-top: 50px;
+    transition: all 0.1s ease-in-out;
+}
+.coll-net__card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.205);
+}
+
+.coll-net__card.bottom {
+    font-weight: 700;
+}
+.coll-net__img {
+    min-width: 60px;
+    min-height: 60px;
+    object-fit: cover;
+}
+.coll-cart__text {
+    font-size: 20px;
+    margin: 10px 0;
+    margin-top: 15px;
+}
+.coll-cart__disc {
+    font-weight: 400;
+}

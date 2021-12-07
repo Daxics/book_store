@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-dark: #4d4d4d;
+    --color-light: #808080;
+    --color-accent: #5d71dd;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    overflow-anchor: none;
+}

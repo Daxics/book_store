@@ -1,0 +1,173 @@
+.modal {
+    font-style: normal;
+    font-family: "PT Sans";
+}
+.order-modal {
+    padding: 40px;
+    width: 592px;
+    min-height: 542px;
+}
+
+.order-modal__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.order-modal__title {
+    font-weight: normal;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: rgb(0, 164, 179);
+}
+.order-modal__numder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: auto;
+    color: #808080;
+}
+.order-modal__info {
+    background: #ffffff;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 34px 40px;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #808080;
+}
+.order-modal__info span {
+    font-weight: 600;
+}
+.order-modal__btn {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.order-modal__btn::after {
+    content: "";
+    position: absolute;
+    right: -16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7px;
+    height: 7px;
+    background-image: url("../img/icons/Group.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.order-modal__btn.open::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.order-modal__info-item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.order {
+    padding: 0 40px;
+}
+.order__label {
+    display: flex;
+    color: #808080;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.order__input {
+    margin-left: auto;
+    margin-bottom: 14px;
+    padding-left: 14px;
+    padding-right: 14px;
+    width: 240px;
+    height: 45px;
+    background: #efefef;
+    border-radius: 4px;
+    border: none;
+}
+
+.order__input::placeholder {
+    color: #818181;
+}
+.order__btn {
+    margin-top: 20px;
+    width: 100%;
+    min-height: 45px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 164, 179);
+}
+
+.order__btn:hover {
+    background-color: rgba(0, 164, 179, 0.842);
+}
+
+/* ===== */
+
+.order-modal__list {
+    display: none;
+    padding: 0 30px;
+}
+
+.order-modal__item {
+    list-style-type: none;
+}
+
+.order-modal__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.order-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.order-product__img {
+    max-width: 70px;
+    max-height: 70px;
+    object-fit: cover;
+}
+.order-product__text {
+    margin-right: auto;
+    margin-left: 10px;
+}
+.modal-product__title {
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000cc;
+}
+.modal-product__author {
+    font-size: 14px;
+    margin-top: 0px;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 10px;
+    color: #0000008c;
+}
+.order-product__price {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: black;
+}
+.order-product__delete {
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 12px;
+    color: #818181;
+}
