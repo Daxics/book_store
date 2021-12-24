@@ -38,6 +38,7 @@
     }
     .header__nav {
         padding: 0 10px;
+        padding-right: auto;
     }
     .nav__list {
         display: flex;

@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700,900&display=swap&subset=cyrillic-ext");
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700,700italic&display=swap&subset=cyrillic-ext");
 
+.cart__text {
+    background-color: #00a4b3;
+    box-shadow: none;
+}
 .container {
     /* width: 940px; */
     /* padding: 0 60px; */
