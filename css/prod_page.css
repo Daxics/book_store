@@ -154,6 +154,9 @@
         padding-right: 200px;
         padding-left: 40px;
     }
+    .header__cart {
+        display: none;
+    }
 }
 
 @media (max-width: 617px) {
@@ -180,12 +183,15 @@
         padding-right: 100px;
         padding-left: 40px;
     }
+    .header__cart {
+        display: none;
+    }
 }
 
 @media (max-width: 308px) {
     .header {
         position: relative;
-        height: 250px;
+        height: 150px;
         min-width: 307px;
     }
     .nav__list {
@@ -221,5 +227,11 @@
     .bottom__description-text {
         font-size: 16px;
         line-height: 25px;
+    }
+    .header__cart {
+        display: none;
+    }
+    .nav__list {
+        display: none;
     }
 }

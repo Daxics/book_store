@@ -54,12 +54,16 @@ body {
     margin-left: 20px;
 }
 .modal-product__title {
+    text-decoration: none;
     margin-bottom: 2px;
     margin-top: 5px;
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
     color: #000000cc;
+}
+.modal-product__title:hover {
+    color: #00a4b3;
 }
 .modal-product__author {
     font-size: 16px;
@@ -97,12 +101,15 @@ body {
     .nav__link {
         font-size: 20px;
     }
+    .header__cart {
+        display: none;
+    }
 }
 
 @media (max-width: 308px) {
     .header {
         position: relative;
-        height: 250px;
+        height: 150px;
         min-width: 307px;
     }
     .order-product__img {
@@ -122,5 +129,11 @@ body {
         padding: 15px;
         align-items: center;
         justify-content: space-around;
+    }
+    .nav__list {
+        display: none;
+    }
+    .header__cart {
+        display: none;
     }
 }
