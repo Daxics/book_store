@@ -69,3 +69,68 @@ body {
 .coll-cart__disc {
     font-weight: 400;
 }
+
+@media (max-width: 925px) {
+    .coll__net {
+        margin: 0 90px;
+        grid-column: 2 span;
+        display: grid;
+        grid-gap: 25px;
+        margin-top: 40px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cart__text {
+        display: none;
+    }
+    .nav__list {
+        text-align: right;
+    }
+}
+@media (max-width: 617px) {
+    .coll__net {
+        margin: 0 128px;
+        grid-column: 1 span;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cart__text {
+        display: none;
+    }
+    .nav__list {
+        display: flex;
+        margin-top: 40px;
+    }
+    .nav__link {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 308px) {
+    .coll__net {
+        margin: 0 8px;
+        grid-column: 1 span;
+        display: grid;
+        grid-gap: 25px;
+        margin-top: 50px;
+        padding-bottom: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .coll-net__card {
+        width: 250px;
+        padding: 20px 20px;
+    }
+    .cart__text {
+        display: none;
+    }
+    .header {
+        position: relative;
+        height: 250px;
+        min-width: 307px;
+    }
+    .nav__list {
+        text-align: center;
+        display: grid;
+        list-style-type: none;
+        margin-top: 10px;
+        padding-left: 0;
+    }
+}

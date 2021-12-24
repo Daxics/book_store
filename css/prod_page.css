@@ -3,7 +3,7 @@
 
 .container {
     /* width: 940px; */
-    padding: 0 60px;
+    /* padding: 0 60px; */
     margin: 0 auto;
     position: relative;
 }
@@ -113,9 +113,9 @@
     line-height: 28px;
 }
 
-.product___description-anotation {
+.product__description-anotation {
     font-family: "PT Sans", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     width: 28px;
     color: #0000008c;
 }
@@ -123,9 +123,99 @@
 .bottom__description-text {
     color: #333333;
     font-family: "PT Sans", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .height {
     height: 40px;
+}
+
+@media (max-width: 925px) {
+    .nav {
+        max-width: 924px;
+    }
+    .product-main-page {
+        padding: 0 10px;
+    }
+    .product-main-page__bottom {
+        display: grid;
+    }
+    .product-main-page__right {
+        margin-left: 0;
+    }
+    .product-main-page__top {
+        width: 100%;
+    }
+    .bottom__description {
+        padding-right: 200px;
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 617px) {
+    .product-main-page {
+        display: grid;
+        align-items: center;
+        padding-left: 20px;
+        padding-bottom: 40px;
+    }
+    .container {
+        padding: 0 0;
+    }
+    .product-main-page__img {
+        padding-left: 60px;
+    }
+    .nav__list {
+        display: flex;
+        margin-top: 40px;
+    }
+    .nav__link {
+        font-size: 20px;
+    }
+    .bottom__description {
+        padding-right: 100px;
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 308px) {
+    .header {
+        position: relative;
+        height: 250px;
+        min-width: 307px;
+    }
+    .nav__list {
+        text-align: center;
+        display: grid;
+        list-style-type: none;
+        margin-top: 10px;
+        padding-left: 0;
+    }
+    .product-main-page {
+        margin-top: 20px;
+    }
+    .product-main-page__img img {
+        max-width: 270px;
+        max-height: 629px;
+        padding-left: 0;
+        object-fit: cover;
+    }
+    .product-main-page__img {
+        padding-left: 0;
+    }
+    .product-main-page__info {
+        height: 500px;
+        display: grid;
+        justify-content: space-between;
+        margin-left: 0px;
+        margin-right: auto;
+    }
+    .bottom__description {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .bottom__description-text {
+        font-size: 16px;
+        line-height: 25px;
+    }
 }
